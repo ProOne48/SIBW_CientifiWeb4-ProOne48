@@ -1,0 +1,55 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+
+    gap: 10px;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow:auto;
+}
+
+.title-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    grid-row: 1;
+    grid-column: 1 / 5;
+}
+
+.cientist-info-div{
+    grid-row: 2 / 5;
+    grid-column: 1 / 5;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    overflow: auto;
+}
+
+.cientist-info-text{
+    
+}
+
+.title-text{
+    font-size: 3.5em;
+}
+
+.cientist-info{
+    grid-row: 2 / 4;
+    grid-column: 1 / 5;
+}
+
+.aux-links-div{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    grid-row: 2/4;
+    grid-column: 5;
+}
