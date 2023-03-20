@@ -19,11 +19,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    visibility: hidden;
+    
+    height: 0px;
+    width: 0px;
 }
 
-.logo-img{
-    max-height: 80px;
-}
 
 .title-header{
     display: flex;
@@ -35,9 +37,6 @@ body{
     grid-row: 1;
     grid-column: 1 / 6;
 
-    border: 2px solid rgb(0, 183, 255);
-    border-radius: 5px;
-    background-color: rgba(127, 255, 212, 0.350);
 }
 
 .upper-header{
@@ -50,14 +49,20 @@ body{
     max-width: 150em;
 }
 
+.navbar{
+    height: 0px;
+    width: 0px;
+}
+
 .navbar-area{
     padding: 5px;
     color: blue;
+    visibility: hidden;
 }
 
 .cientist-info-div{
     grid-row: 2 / 5;
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
 
     display: flex;
     flex-wrap: wrap;
@@ -66,29 +71,11 @@ body{
 
     overflow: auto;
     padding: 1.2em;
-
-    border: 0.5px solid black;
-    border-radius: 10px;
-    background-color: beige;
 }
 
 .cientist-header-div{
     margin-left: 10px;
 }
-
-.cientist-info-div button{
-    padding: 0.4em;
-    margin-right: 0.2em ;
-    border-radius: 4px;
-    border: 0.1em solid black;
-
-}
-
-.cientist-info-div button:hover{
-    background-color: #3a3939;
-    color: white;
-}
-
 
 .title-text{
     font-size: 3.5em;
@@ -102,6 +89,35 @@ body{
     margin-top: 2px;
     margin-bottom: 8px;
     padding: 1px;
+}
+
+.cientist-info-div button{
+    padding: 0.4em;
+    margin-right: 0.2em ;
+    border-radius: 4px;
+    border: 0.1em solid black;
+
+    visibility: hidden;
+}
+
+.cientist-info-div button:hover{
+    background-color: #3a3939;
+    color: white;
+
+    visibility: hidden;
+}
+
+.cientist-info-text{
+    
+}
+
+.title-text{
+    font-size: 3.5em;
+}
+
+.cientist-info{
+    grid-row: 2 / 4;
+    grid-column: 1 / 5;
 }
 
 .photo-top{
@@ -125,9 +141,12 @@ body{
 
     border-left:  0.3rem solid black;
 
+    max-height: 100%;
 
     padding: 0.35em;
     
+    visibility: hidden;
+
 }
 
 .aux-links-text{
