@@ -1,0 +1,25 @@
+button{
+    border-radius: 0.6em;
+    border: solid black 0.1em;   
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.form-control {
+    border-radius: 0.6em;
+    border: solid black 0.1em;
+
+    margin: 0.2em 0em;
+    padding: 0.2em;
+    width: 100%;
+
+    cursor: text;
+}
+
+.btn{
+    margin: 5px 0;
+    padding: 3px 8px;
+    cursor: pointer;
+}

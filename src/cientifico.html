@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../stylesheet/cientifico.css">
+        <link rel="stylesheet" href="../stylesheet/comments.css">
         <title>
             Cientifiweb4 - Nikola Tesla
         </title>
@@ -10,7 +11,7 @@
     <body>
         <header class="title-header">
             <div class="upper-header">
-
+                
                 <div class="logo-div">
                     <img class="logo-img" src="../img/c.png">
                     <a href="https://www.flaticon.es/iconos-gratis/letra-c" title="letra c iconos">Letra c iconos creados por Freepik - Flaticon</a>
@@ -21,7 +22,7 @@
             </div>
             
             <div class="bottom-header">
-
+                
                 <nav class="navbar">
                     <a class="navbar-area" href="portada.html">Inicio</a>
                     <a class="navbar-area">Menu 2</a>
@@ -30,6 +31,7 @@
                 </nav>
             </div>
         </header>
+        
 
         <div class="cientist-info-div">
             <div class="cientist-header-div">
@@ -75,6 +77,8 @@
         </div>
 
         <div class="aux-links-div">
+            
+            
             <aside class="aux-links-text">
                 El dinero que Tesla obtuvo de la licencia de sus patentes de corriente alterna lo hizo económicamente independiente y le proporcionó el tiempo y los fondos necesarios para perseguir sus propios intereses.
                 <br>
@@ -82,6 +86,28 @@
                 <br>
                 Tesla y su personal contratado realizarían parte de su trabajo más importante en estos talleres.
             </aside>
+            
+            <button class="btn show-comments" onclick=showComments()>Show Comments</button>
+            
+            <form class="comment-form hidden" id="comment-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" required name="author" id="author-input" placeholder="Author">
+                    
+                    <input type="text" class="form-control" required name="comment" id="content-input" placeholder="Comment">
+                    
+                    <input type="email" class="form-control" required name="email" id="email-input" placeholder="Email">
+
+                </div>
+            </form>
+            <button class="btn hidden" id="add-comment-btn-id" onclick=addComment()>Add Comment</button>
+            
+            <div class="comments-div" id="comments-id">
+                <ul class="comment-list" id="comment-list-id">
+
+                </ul>
+            </div>
+
         </div>
+        <script src="comments.js"></script>
     </body>
 </html>
